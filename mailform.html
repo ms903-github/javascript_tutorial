@@ -11,9 +11,33 @@
     <div id="main">
         <h2 class="mail-bar">メールフォーム</h2>
         <form action="" method="post">
-
+            <dl class="clearfix mailform">
+                <dt>お名前</dt>
+                <dd><label><input type="text" name="name" value="" size="50" /></label></dd>
+                <dt>e-mail</dt>
+                <dd><label><input type="text" name="email" value="" size="50" /></label></dd>
+                <dt>件名</dt>
+                <dd><label><input type="text" name="subject" value="" size="50" /></label></dd>
+                <dt>内容</dt>
+                <dd><label><textarea type="text" name="content" value="" size="50" cols="50"
+                            rows="10"></textarea></label></dd>
+                <dt>&nbsp;</dt>
+                <dd>
+                    <label><input type="checkbox" name="agreement" value="1" class="checkbtn" />利用規約に同意します．</label>
+                </dd>
+            </dl>
+            <p class="buttons">
+                <input type="submit" name="submit_btn" value="確認画面へ" />
+            </p>
         </form>
     </div>
 </body>
 
 </html>
+
+<!-- 
+メモ
+dタグ：definition
+dlでdefinition listを定義，dtで定義される用語(term)を指定，ddで記述(description)をする．
+&nbsp;　：　改行しない空白
+-->
