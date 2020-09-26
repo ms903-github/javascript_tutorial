@@ -69,4 +69,7 @@ function checkForm() {
 /*　メモ
 alert : ただのウィンドウ表示
 confirm : ok, キャンセルの二択になる
+formオブジェクト：
+.valueで値にアクセス
+.submitで送信
  */
